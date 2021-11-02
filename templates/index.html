@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>This is the body of the page</h1>
+    
+<div>
+           <p1>Name: {{ name }}</p1>
+    </div>
+    <div>
+        <p>Country: {{ country }}</p>
+    </div>
+    <div>
+        <p>
+            {% for num in list %}
+           <h{{ num }}>
+               Life is cool
+           </h{{ num }}>
+           {% endfor %}
+        </p>
+    </div>
+{% endblock body %}
